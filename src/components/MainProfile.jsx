@@ -5,7 +5,7 @@ import snap from '../assets/Snap.jpg';
 const MainProfile = () => {
     return (
         <React.Fragment>
-            <Container className='border mt-5 MuiContainer-maxWidthMd'>
+            <Container className='mt-5 MuiContainer-maxWidthMd'>
                 <Grid item container xs={12}>
                     <Grid item lg={8} xs={12} >
 
