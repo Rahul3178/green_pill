@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/green_pill/static/css/main.756af292.css",
-    "main.js": "/green_pill/static/js/main.ef8a0517.js",
+    "main.js": "/green_pill/static/js/main.8df107c9.js",
     "static/js/787.b370c870.chunk.js": "/green_pill/static/js/787.b370c870.chunk.js",
     "static/media/Snap.jpg": "/green_pill/static/media/Snap.749667cc5449de2b9786.jpg",
     "index.html": "/green_pill/index.html",
     "main.756af292.css.map": "/green_pill/static/css/main.756af292.css.map",
-    "main.ef8a0517.js.map": "/green_pill/static/js/main.ef8a0517.js.map",
+    "main.8df107c9.js.map": "/green_pill/static/js/main.8df107c9.js.map",
     "787.b370c870.chunk.js.map": "/green_pill/static/js/787.b370c870.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.756af292.css",
-    "static/js/main.ef8a0517.js"
+    "static/js/main.8df107c9.js"
   ]
 }
