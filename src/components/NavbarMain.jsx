@@ -11,9 +11,10 @@ import {
   useMediaQuery,
   Typography,
 } from "@mui/material";
-import CodeIcon from "@mui/icons-material/Code";
+
 import TerminalIcon from "@mui/icons-material/Terminal";
 import NavbarDrawer from "./NavbarDrawer";
+
 
 const colorBG =
   "radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(250,104,134,1) 100%)";
@@ -64,7 +65,8 @@ const NavbarMain = ({ navBox }) => {
                   onChange={handleChange}
                 >
                   {navBox.map((link, index) => (
-                    <Tab key={index} label={link} />
+                    <Tab key={index} label={link}>
+                    </Tab>
                   ))}
                 </Tabs>
               </Grid>

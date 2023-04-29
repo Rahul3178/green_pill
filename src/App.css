@@ -13,7 +13,8 @@
   }
 }
 
-.App-header {
+.App-header{
+
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,6 +23,22 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
+  
+}
+
+/* .Backpk {
+ 
+  background-image:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+} */
+
+.ProfileHead
+{
+   font-family: 'Dancing Script', cursive;
+}
+.cont2{
+  max-height: 100%;
+  
 }
 
 .App-link {
