@@ -3,33 +3,34 @@ import {
   Button,
   Grid,
   Stack,
-  CardHeader,
   CardMedia,
-  CardContent,
-  Container,
+  CardContent
+ 
 } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
+import { Coming } from '../Actions/ActionIndex'
+import { useDispatch , useSelector } from 'react-redux'
 import SendIcon from "@mui/icons-material/Send";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import snap from "../assets/Snap.jpg";
-import CommingSoon from "../Templates/CommingSoon";
+import ComingSoon from "../Templates/ComingSoon";
 import ContactUs from "./ContactUs";
 const MainProfile = () => {
-  const [openModel, setOpenModel] = useState(false);
-
-  const commingSoonHandler = () => {
-    setOpenModel(false);
-  };
+  const myComingSoonState= useSelector((state)=>state.ChangeComingSoonState);
+ 
+  const dispatch= useDispatch();
+  console.log("myComingSoonState:");
+   console.log(myComingSoonState)
 
   return (
     <React.Fragment>
       <div className="container-fluid-md  mt-md-3" style={{ borderStyle: "solid", borderWidth:0 }} >
 
-        <Grid className="p-3" container xs={12} alignItems='center' justifyContent='center'
+        <Grid className="p-3" container item xs={12} alignItems='center' justifyContent='center'
          style={{borderStyle: "solid", borderWidth:0,borderRadius:30,
         }}>
         
-        <Grid item md={8} sm={6} xs={12} className="" >
+        <Grid item md={8} sm={6} xs={12} >
         <Card elevation={3} className="p-md-2 p-xs-1" style={{ height: 500 }}>
               
               <h1 className="text-center fw-bold ProfileHead p-2">Hey! I Am </h1>
@@ -52,20 +53,20 @@ const MainProfile = () => {
                 <Button
                   className="text-wrap fw-light"
                   variant="contained"
-                  
+                  onClick={() => {dispatch(Coming())}}
                   endIcon={<LinkedInIcon />}
                 >
                   Profile
                 </Button>
                 <Button
-                  onClick={() => setOpenModel(true)}
+                  onClick={() => {dispatch(Coming())}}
                   variant="contained"
                   color="success"
                   endIcon={<SendIcon />}
                 >
                   Resume
                 </Button>
-                {openModel && <CommingSoon onClose={commingSoonHandler} />}
+                {myComingSoonState&& <ComingSoon onClose={()=>dispatch(Coming())} />}
               </Stack>
               </CardContent>
             </Card>

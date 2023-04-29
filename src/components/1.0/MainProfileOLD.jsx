@@ -12,7 +12,7 @@ import React, { useState } from "react";
 import SendIcon from "@mui/icons-material/Send";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import snap from "../assets/Snap.jpg";
-import CommingSoon from "../Templates/CommingSoon";
+import CommingSoon from "../../Templates/CommingSoon";
 const MainProfile = () => {
   const [openModel, setOpenModel] = useState(false);
 

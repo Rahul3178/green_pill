@@ -27,10 +27,23 @@
   
 }
 
-/* .Backpk {
+.Backpk {
  
   background-image:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
-} */
+}
+
+.white-text{
+  color:whitesmoke;
+}
+
+/* page not found */
+.pnf{
+  /* font-family: 'Rubik Pixels', cursive; */
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 120px;
+}
+
+/* link style to remove underline */
 
 .ProfileHead
 {

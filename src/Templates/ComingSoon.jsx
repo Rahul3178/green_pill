@@ -2,7 +2,7 @@ import React from "react";
 import { Dialog, DialogContent, DialogContentText, DialogTitle, Grid, IconButton } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
 
-const CommingSoon = ({onClose}) => {
+const ComingSoon = ({onClose}) => {
  
 const currentDate = new Date().toLocaleString();
   return (
@@ -33,8 +33,11 @@ const currentDate = new Date().toLocaleString();
         </DialogTitle>
           <DialogContent dividers>
             <DialogContentText>
-              <h3>Comming Soon</h3>
-              <h4>{currentDate}</h4>
+                <div className="container-fluid">
+                <h3>Comming Soon</h3>
+                <h4>{currentDate}</h4>
+                </div>
+              
             </DialogContentText>
           </DialogContent>
         
@@ -43,4 +46,4 @@ const currentDate = new Date().toLocaleString();
   );
 };
 
-export default CommingSoon;
+export default ComingSoon;
