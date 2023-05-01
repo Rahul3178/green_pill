@@ -19,6 +19,7 @@ function App() {
      <NavBar navBox={NavLinks}/>
       <Routes>
         <Route path='/' element={<MainProfile/>}  />
+        <Route path='/green_pill' element={<MainProfile/>}  />
         <Route path='home' element={<MainProfile/>}  />
         <Route path='contact' element={<ContactUs/>} />
         <Route path='bookShelf' element={<BookShelf/>} />
