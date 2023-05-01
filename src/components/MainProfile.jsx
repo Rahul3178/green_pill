@@ -53,10 +53,12 @@ const MainProfile = () => {
                 <Button
                   className="text-wrap fw-light"
                   variant="contained"
-                  onClick={() => {dispatch(Coming())}}
+                  
                   endIcon={<LinkedInIcon />}
-                >
+                ><a className="lk" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/rahul-kumar-a726ba202">
                   Profile
+                </a>
+                  
                 </Button>
                 <Button
                   onClick={() => {dispatch(Coming())}}

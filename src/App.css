@@ -66,3 +66,80 @@
     transform: rotate(360deg);
   }
 }
+
+.lk{
+  color:whitesmoke;
+  text-decoration:none
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+.lk:hover { 
+  color: rgba(250,104,134,1);
+  text-decoration: none;
+ }
+a:active { text-decoration: none; }
+ 
+/* Bookshelf link start */
+.BookShelf-headings{
+  font-family: 'Cabin Sketch', cursive;
+}
+/* 
+.BookShelf-ul{
+  
+  text-align: left;
+ 
+} */
+
+
+.BookShelf-link{
+  color: rgba(250,104,134,1);
+  text-decoration:none
+}
+.BookShelf-link:link { text-decoration: none; }
+.BookShelf-link:visited { text-decoration: none; }
+.BookShelf-link:hover { 
+  color:whitesmoke;
+  text-decoration: none;
+ }
+a:active { text-decoration: none; }
+
+/* Bookshelf link end */
+
+
+
+
+
+
+/* launch page counter timer  */
+
+
+.container-values{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.contained-value{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 30px;
+  color:whitesmoke;
+  background-color:#515ada;
+  border: 2px solid whitesmoke;
+  border-radius: 30px;
+ 
+}
+.t-value{
+  font-size: 50px;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.t-text{
+  font-size: 20px;
+}
+
+/* // launch page timer end */

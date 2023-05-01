@@ -4,11 +4,11 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const ComingSoon = ({onClose}) => {
  
-const currentDate = new Date().toLocaleString();
+const currentDate = new Date('may 31,2023 23:59:59');
   return (
     <React.Fragment>
 
-      <Dialog open='true'>
+      <Dialog open>
         <DialogTitle  >
         <Grid container>
         <Grid item xs={8}>
@@ -33,12 +33,12 @@ const currentDate = new Date().toLocaleString();
         </DialogTitle>
           <DialogContent dividers>
             <DialogContentText>
-                <div className="container-fluid">
-                <h3>Comming Soon</h3>
-                <h4>{currentDate}</h4>
-                </div>
-              
+            
             </DialogContentText>
+            <div className="container-fluid">
+            <h3>Coming Soon</h3>
+            <h4 className="t-Text">{currentDate.getDate()}/{currentDate.getMonth()}/{currentDate.getFullYear()}</h4>
+           </div>            
           </DialogContent>
         
       </Dialog>

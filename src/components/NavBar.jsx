@@ -8,7 +8,7 @@ const NavBar = ({ navBox }) => {
   return (
     <React.Fragment>
       <nav
-        className="navbar navbar-expand-lg navbar-light bg-light"
+        className="navbar navbar-expand-lg sticky-top navbar-light bg-light mb-5"
         style={{ backgroundImage: colorBG }}
       >
         <div className="container-fluid">
@@ -85,7 +85,8 @@ const NavBar = ({ navBox }) => {
                     sx={{ marginLeft: 2, background: "rgba(250,104,134,1)" }}
                     variant="contained"
                   >
-                    Book Shelf
+                  <Link className="white-text" to='/bookShelf'>Book Shelf</Link>
+                    
                   </Button>
                 </Box>
           </div>

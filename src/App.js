@@ -8,7 +8,7 @@ import WorkExperience from "./components/WorkExperience";
 import NavBar from "./components/NavBar";
 import FooterDetails from "./components/FooterDetails";
 import PageNotFound from "./Templates/PageNotFound";
-
+import BookShelf from "./components/BookShelf";
 
 function App() {
   const NavLinks = ["Home", "Project", "Profile", "Contact", "Work_Experience"];
@@ -21,6 +21,7 @@ function App() {
         <Route path='/' element={<MainProfile/>}  />
         <Route path='home' element={<MainProfile/>}  />
         <Route path='contact' element={<ContactUs/>} />
+        <Route path='bookShelf' element={<BookShelf/>} />
         <Route path='work_experience' element={<WorkExperience/>} />
         <Route path='*' element={<PageNotFound/>} />
       </Routes>
