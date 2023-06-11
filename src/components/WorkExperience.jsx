@@ -1,8 +1,11 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from "react";
 import Launching from "../Templates/Launching";
 
 const WorkExperience = () => {
+
+  useEffect(()=>{
+    document.title="Work";
+  },[]);
   // const myState = useSelector((state) => state.ChangeComingSoonState);
 
   // const dispatch = useDispatch();

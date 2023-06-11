@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -27,10 +28,10 @@
   
 }
 
-.Backpk {
+/* .Backpk {
  
   background-image:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
-}
+} */
 
 .white-text{
   color:whitesmoke;
@@ -77,7 +78,11 @@ a:visited { text-decoration: none; }
   color: rgba(250,104,134,1);
   text-decoration: none;
  }
-a:active { text-decoration: none; }
+ .ak:hover { 
+  color: rgba(250,104,134,1);
+  text-decoration: none;
+ }
+a:active { text-decoration:none; }
  
 /* Bookshelf link start */
 .BookShelf-headings{
@@ -98,8 +103,8 @@ a:active { text-decoration: none; }
 .BookShelf-link:link { text-decoration: none; }
 .BookShelf-link:visited { text-decoration: none; }
 .BookShelf-link:hover { 
-  color:whitesmoke;
-  text-decoration: none;
+  color:blue;
+  text-decoration: underline;
  }
 a:active { text-decoration: none; }
 
@@ -143,3 +148,85 @@ a:active { text-decoration: none; }
 }
 
 /* // launch page timer end */
+
+
+/* Hand wave animation start */
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  pointer-events:none;
+}
+
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(14.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(10.0deg) }
+ 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+100% { transform: rotate( 0.0deg) }
+}
+
+
+/* Hand wave animation end */
+
+.t-red{
+  color:rgba(250,104,134,1);
+}
+
+
+/* Navbar  link start */
+
+.nav_Link{
+  display: flex;
+  /* flex-direction: column; */
+  gap: 2px;
+  padding: 10px;
+  text-Decoration: none;
+  color: whitesmoke;
+}
+
+.nav_Link:hover{
+  text-decoration: underline;
+ color: whitesmoke; 
+ font-weight: bolder; 
+}
+.nav_Link:active{
+  text-decoration: underline;
+ color: rgba(250,104,134,1);
+}
+
+.nav_Link:active{
+  text-decoration:wavy;
+ 
+  
+
+}
+/* Navbar  link end */
+/* name logo */
+.Name-logo:hover{
+  text-decoration: wavy;
+  color: whitesmoke; 
+  font-weight: bolder;
+}
+
+
+/* Tag Line font */
+.Tag-Name{
+  font-family: 'Bruno Ace', cursive;
+}
+/* Tag Line font End*/
+
+
+/* Home page CSS */
+.Home-content{
+color: #4a4a4a;
+font-size: larger;  
+
+}

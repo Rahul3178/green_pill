@@ -1,3 +1,9 @@
+// NavLink data
+
+// export  const NavLinks1 = ["Home", "Project","Contact", "Work_Experience", "Bookshelf" , "Login"];
+
+
+
 // footer details dynamic data 
 
 export const footDetails=[
