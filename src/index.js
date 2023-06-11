@@ -5,20 +5,88 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import CentralStore from './Store/CentralStore'
 import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
+import {  createBrowserRouter,RouterProvider } from 'react-router-dom';
+import Profile from './components/Profile';
+import Projects from './components/Projects';
+import ContactUs from './components/ContactUs';
+import BookShelf from './components/BookShelf';
+import PageNotFound from './Templates/PageNotFound';
+import BodyLayout from './components/BodyLayout';
+import WorkExperience from './components/WorkExperience';
+import Home from './components/Home';
+
 CentralStore.subscribe(()=> console.log(CentralStore.getState()));
+
+
+const appRouter = createBrowserRouter(
+  [
+    {
+      path:"/",
+      element:<App/>,
+      errorElement:<PageNotFound/>,
+      children: [
+        {
+          path:"/",
+          element:<Home/>
+        },
+        {
+          path:"/",
+          element:<BodyLayout/>,
+          errorElement:<PageNotFound/>,
+          children:[
+            {
+              path:"home",
+              element:<Home/>
+            },
+            {
+              path:"profile",
+              element:<Profile/>
+            },
+            {
+              path:"project",
+              element:<Projects/>
+            },
+            {
+              path:"contact",
+              element:<ContactUs/>
+            },
+            {
+              path:"Work_Experience",
+              element:<WorkExperience/>
+            }
+          ]
+        },
+        {
+          path:"bookshelf",
+          element:<BookShelf/>
+        },
+
+        
+        
+      ]
+    },
+    
+   
+
+  ]
+)
+
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <BrowserRouter>
+  
  
   <Provider store={CentralStore}>
-  <App/>
+  <RouterProvider router={appRouter}>
+ 
+  </RouterProvider>
   </Provider>
       
-  </BrowserRouter>
+  
   </React.StrictMode>
 );
 
@@ -26,3 +94,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
