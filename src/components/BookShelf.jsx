@@ -1,6 +1,6 @@
 import React,{useEffect} from "react";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
-import { booklink } from "./DDataConfig";
+import { booklink } from "./Constants";
 import FeedIcon from '@mui/icons-material/Feed';
 
 
